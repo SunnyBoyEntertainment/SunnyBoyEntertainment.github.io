@@ -1,5 +1,128 @@
-Hello world check out my homepage!
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Underground</title>
+    <meta name="description" content="Underground">
+    <script src="dist/aframe.js"></script>
+	<script src="assets/js/raycaster-helper.js"></script>
+    <script src="assets/js/entity-generator.js"></script>
+    <script src="assets/js/intersect-color-change.js"></script>  
+    <script src="https://unpkg.com/aframe-animation-component@3.2.5/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-randomizer-components@3.0.2/dist/aframe-randomizer-components.min.js"></script>
+
+  </head>
+  <body>
+<a-scene name="Cistern" fog="type: exponential; color: #000; near: 0.1; far: 2; density: 0.5">
+  <a-assets>
+  <img id="my-texture" src="images/myTexture.jpg">
+    <img id="my-texture2" src="images/myTexture2.jpg">
+  <a-mixin id="light"
+                 geometry="primitive: sphere; radius: 1.5"
+                 material="color: #FFF; shader: flat"
+                 light="color: #FF0000; distance: 120; intensity: 2; type: point"></a-mixin>
+        <a-mixin id="torusKnot"
+                 random-torus-knot
+                 random-material
+random-position="min: -60 -60 -80; max: 60 60 40"></a-mixin>
+    <a-asset-item id="polySurface8-obj" src="./models/polySurface8.obj"></a-asset-item>
+    <a-asset-item id="polySurface8-mtl" src="./models/polySurface8.mtl"></a-asset-item>
+    <a-asset-item id="polySurface5-obj" src="./models/polySurface5.obj"></a-asset-item>
+    <a-asset-item id="polySurface5-mtl" src="./models/polySurface5.mtl"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart0-obj" src="./models/pasted__Floor_03_locator1_MeshPart0.obj"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart0-mtl" src="./models/pasted__Floor_03_locator1_MeshPart0.mtl"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart1-obj" src="./models/pasted__Floor_03_locator1_MeshPart1.obj"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart1-mtl" src="./models/pasted__Floor_03_locator1_MeshPart1.mtl"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart2-obj" src="./models/pasted__Floor_03_locator1_MeshPart2.obj"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart2-mtl" src="./models/pasted__Floor_03_locator1_MeshPart2.mtl"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart3-obj" src="./models/pasted__Floor_03_locator1_MeshPart3.obj"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart3-mtl" src="./models/pasted__Floor_03_locator1_MeshPart3.mtl"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart4-obj" src="./models/pasted__Floor_03_locator1_MeshPart4.obj"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart4-mtl" src="./models/pasted__Floor_03_locator1_MeshPart4.mtl"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart5-obj" src="./models/pasted__Floor_03_locator1_MeshPart5.obj"></a-asset-item>
+    <a-asset-item id="pasted__Floor_03_locator1_MeshPart5-mtl" src="./models/pasted__Floor_03_locator1_MeshPart5.mtl"></a-asset-item>
+    <a-asset-item id="pasted__C-obj" src="./models/pasted__C.obj"></a-asset-item>
+    <a-asset-item id="pasted__C-mtl" src="./models/pasted__C.mtl"></a-asset-item>
+
+	<a-mixin id="box" geometry="primitive: box; depth: 0.1, height: 0.3; width: 0.1"
+                          material="color: #DDD; opacity: 0.4; shader: flat"
+                          intersect-color-change></a-mixin>
+	<a-mixin id="picture" geometry="primitive: box;  height: 0.5; width: 0.5; depth: 0.02"
+                          material="color: #AAA; opacity: 1; shader: standard"
+                          intersect-color-change></a-mixin>
+    <a-mixin id="finger" geometry="primitive: box; height: 0.02; width: 0.02; depth: 0.5"
+                             material="side: double"></a-mixin>
+    <a-mixin id="raycaster" raycaster="objects: [mixin~='picture']"
+                                raycaster-helper material="opacity: 0.1"></a-mixin>
+
+        <a-mixin id="color1" material="color: #0B88A8"></a-mixin>
+        <a-mixin id="color2" material="color: #A6DC8C"></a-mixin>
+        <a-mixin id="color3" material="color: #DFEB95"></a-mixin>
+        <a-mixin id="color4" material="color: #095062"></a-mixin>
+        <a-mixin id="color5" material="color: #FCEFED"></a-mixin>
+        <a-mixin id="color6" material="color: #6173F4"></a-mixin>
+        <a-mixin id="color7" material="color: #3B2E40"></a-mixin>
+        <a-mixin id="color8" material="color: #F35E3E"></a-mixin>
+  </a-assets>
 
 
-----------------------------
-http://username.github.io
+  <a-sky radius="5000" color="#000000"></a-sky>
+  <a-entity id="player" position="-0.02 0.6 -0.07" name="Player">
+    <a-entity position="0 0 0.001" name="PerspectiveCamera" tag="MainCamera">
+      <a-entity camera look-controls wasd-controls near="0.001">
+        <a-entity id="left_side" position="0 0 0">
+          <a-entity mixin="color1 finger" position="0 0 0" rotation="0 80 0">
+            <a-entity mixin="color1 raycaster"></a-entity>
+          </a-entity>
+		  <a-entity mixin="color1 finger" position="0 0 0" rotation="15 80 0">
+            <a-entity mixin="color1 raycaster"></a-entity>
+          </a-entity>
+		  <a-entity mixin="color1 finger" position="0 0 0" rotation="-15 80 0">
+            <a-entity mixin="color1 raycaster"></a-entity>
+          </a-entity>
+		  <a-entity mixin="color1 finger" position="0 0 0" rotation="-30 80 0">
+            <a-entity mixin="color1 raycaster"></a-entity>
+          </a-entity>
+		  <a-entity mixin="color1 finger" position="0 0 0" rotation="-30 80 0">
+            <a-entity mixin="color1 raycaster"></a-entity>
+          </a-entity>
+        </a-entity>
+
+		<a-entity id="right_side" position="0 0 0">
+          <a-entity mixin="color1 finger" position="0 0 0" rotation="0 -80 0">
+            <a-entity mixin="color1 raycaster"></a-entity>
+          </a-entity>
+        </a-entity>
+
+      </a-entity>
+    </a-entity>
+  </a-entity>
+
+
+
+  <a-entity mixin="picture" position="-0.4 1 -1" rotation="0 0 0" scale="1 1 1" material ="src: #my-texture; roughness: 0.5; metalness: 0"></a-entity>
+  <a-entity scale="0.01 0.01 0.01" name="Wall">
+    <a-entity name="polySurface8" obj-model="obj: #polySurface8-obj; mtl: #polySurface8-mtl"></a-entity>
+    <a-entity name="DoorWay">
+      <a-entity name="polySurface5" obj-model="obj: #polySurface5-obj; mtl: #polySurface5-mtl"></a-entity>
+    </a-entity>
+    <a-entity name="Floor">
+      <a-entity name="pasted__Floor_03_locator1">
+        <a-entity name="pasted__Floor_03_locator1_MeshPart0" obj-model="obj: #pasted__Floor_03_locator1_MeshPart0-obj; mtl: #pasted__Floor_03_locator1_MeshPart0-mtl"></a-entity>
+        <a-entity name="pasted__Floor_03_locator1_MeshPart1" obj-model="obj: #pasted__Floor_03_locator1_MeshPart1-obj; mtl: #pasted__Floor_03_locator1_MeshPart1-mtl"></a-entity>
+        <a-entity name="pasted__Floor_03_locator1_MeshPart2" obj-model="obj: #pasted__Floor_03_locator1_MeshPart2-obj; mtl: #pasted__Floor_03_locator1_MeshPart2-mtl"></a-entity>
+        <a-entity name="pasted__Floor_03_locator1_MeshPart3" obj-model="obj: #pasted__Floor_03_locator1_MeshPart3-obj; mtl: #pasted__Floor_03_locator1_MeshPart3-mtl"></a-entity>
+        <a-entity name="pasted__Floor_03_locator1_MeshPart4" obj-model="obj: #pasted__Floor_03_locator1_MeshPart4-obj; mtl: #pasted__Floor_03_locator1_MeshPart4-mtl"></a-entity>
+        <a-entity name="pasted__Floor_03_locator1_MeshPart5" obj-model="obj: #pasted__Floor_03_locator1_MeshPart5-obj; mtl: #pasted__Floor_03_locator1_MeshPart5-mtl"></a-entity>
+      </a-entity>
+    </a-entity>
+    <a-entity name="Stairs">
+      <a-entity name="pasted__C" obj-model="obj: #pasted__C-obj; mtl: #pasted__C-mtl"></a-entity>
+    </a-entity>
+  </a-entity>
+	<a-entity position="-1.23 1.94 1.8" light="color:#943903;distance:5;type:point;target:null" ></a-entity>
+	<a-entity position="1.23 1.94 -1.8" light="color:#016696;distance:2.36;type:point;target:null"></a-entity>
+ 
+</a-scene>
+</body>
+</html>
