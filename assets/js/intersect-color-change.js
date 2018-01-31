@@ -14,6 +14,8 @@ AFRAME.registerComponent('intersect-color-change', {
     var initialColor = material.color;
     var initialOpacity = material.opacity;
 
+
+
     // Set color using raycaster parent color.
     el.addEventListener('raycaster-intersected', function (evt) {
 	 switch (evt.target) {
