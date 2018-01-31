@@ -53,15 +53,7 @@
 
 
 			<a-mixin id="color1" class="not-clickable" material="color: #0B88A8"></a-mixin>
-			<a-mixin id="color2" class="not-clickable" material="color: #A6DC8C"></a-mixin>
-			<a-mixin id="color3" class="not-clickable" material="color: #DFEB95"></a-mixin>
-			<a-mixin id="color4" class="not-clickable" material="color: #095062"></a-mixin>
-			<a-mixin id="color5" class="not-clickable" material="color: #FCEFED"></a-mixin>
-			<a-mixin id="color6" class="not-clickable" material="color: #6173F4"></a-mixin>
-			<a-mixin id="color7" class="not-clickable" material="color: #3B2E40"></a-mixin>
-			<a-mixin id="color8" class="not-clickable" material="color: #F35E3E"></a-mixin>
-			<a-mixin id="videoBox" video geometry="height:2;width:1.075"
-                             material="side: double"></a-mixin>
+
 			<video id="nuns" autoplay loop="false" src="./assets/vids/Nun_youtube.mp4"></video>
 		  </a-assets>
 
@@ -77,11 +69,8 @@
 				<a-camera id="camera" class="not-clickable" look-controls position="0 0 0" collider-check>
 					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="5.51 120 0" line="end:0 0 -1000" ></a-entity>
 					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="15 180 0" line="end:0 0 -1000" ></a-entity>
-					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="-15 180 0" line="end:0 0 -1000"></a-entity>
-					
+					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="-15 180 0" line="end:0 0 -1000"></a-entity>				
 				</a-camera>
-
-			<a-entity id="refresh-button" class="collidable" geometry="primitive: box" material="color: red" position="0 0 -2"></a>
 			<a-entity class="collidable" id="blueTrigger" mixin="picture" position="2.758 2.284 -3.9" rotation="0 -45 0" scale="1 1 1" material ="src: #my-texture; roughness: 0.5; metalness: 0"></a-entity>
 			<a-entity class="collidable" id="orangeTrigger" mixin="picture" visible="false" position="-2.758 2.284 3.9" rotation="0 -45 0" scale="1 1 1" material ="src: #my-texture; roughness: 0.5; metalness: 0"></a-entity>
 			<a-video class="collidable" id="orangeNun" visible="false" src="#nuns" width="9" height="16" position="-2.758 2.284 3.9" rotation="0 -45 0" geometry="height:2;width:1.075" material="color:#943903"></a-video>
