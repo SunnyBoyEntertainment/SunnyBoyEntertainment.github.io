@@ -3,13 +3,13 @@
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
     <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
-	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script>
 	<script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script> 
 	<script src="assets/js/raycaster-helper.js"></script>
     <script src="assets/js/entity-generator.js"></script>
     <script src="assets/js/intersect-color-change.js"></script>  
+	<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+	<script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
 
   </head>
   <body>
@@ -60,7 +60,7 @@
 			<video id="nuns" autoplay loop="false" src="./assets/vids/Nun.mp4"></video>
 			<video id="fireVid" autoplay loop="true" src="./assets/vids/fireVid.mp4"></video>
 		  </a-assets>
-
+			 <a-entity geometry="primitive:box" material="shader:gif;src:url(https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif);" gif=""></a-entity>
 			<a-entity id='controller'>
 			<a-entity oculus-touch-controls="hand: right">
 			<a-cylinder height="1" radius="0.2" position="0 0 0" rotation="90 0 0" geometry="height:0.37;radius:0.02;shader:flat;src:#woodTexture">
@@ -74,18 +74,8 @@
 				</a-entity>
 			</a-cylinder>
 			</a-cylinder></a-entity>
-			<a-entity vive-controls="hand: right">
-			<a-cylinder height="1" radius="0.2" position="0 0 0" rotation="90 0 0" geometry="height:0.37;radius:0.02;shader:flat;src:#woodTexture">
-				<a-cylinder color="crimson" height="1" radius="0.2" rotation="180 0 0" position="0 -0.19 0" material="opacity:0.9;transparent:true;fog:false;side:double;color:#ad8343;shader:flat;src:#fireVid" geometry="height:0.12;segmentsHeight:16;radius:0.04;openEnded:true">
-					<a-animation attribute="geometry.height" dur="2000" from="0.14" to="0.1" direction="alternate-reverse" repeat="indefinite"></a-animation>
-					<a-animation attribute="material.color" dur="2000" from="#ad8343" to="#411a01" direction="alternate-reverse" repeat="indefinite"></a-animation>
-					
-				<a-entity position="0 -0.022264516194091755 0" light="distance:6.999997114206;color:#943903;type:point">
-					<a-animation attribute="light.intensity" dur="2000" from=1" to=" 0.6" direction="alternate-reverse" repeat="indefinite"></a-animation>
-					
-				</a-entity>
-			</a-cylinder>
-			</a-cylinder></a-entity>
+			<a-entity vive-controls="hand: right;model: false">
+			</a-entity>
 			
 			
 			
@@ -149,6 +139,7 @@
 				<a-entity position="1.923 4.9 -2.769" light="distance:6.7;color:#016696;type:point"></a-entity>
 				
     </a-scene>
+	
   </body>
 
 
