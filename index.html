@@ -1,20 +1,24 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
     <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script>
 	<script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script> 
 	<script src="assets/js/raycaster-helper.js"></script>
     <script src="assets/js/entity-generator.js"></script>
     <script src="assets/js/intersect-color-change.js"></script>  
+
   </head>
   <body>
     <a-scene>
 		  <a-assets>
 			<img id="my-texture" src="images/myTexture.jpg">
 			<img id="my-texture2" src="images/myTexture2.jpg">
+			<img id="fireTexture" src="images/fire.jpg">
+			<img id="woodTexture" src="images/wood.jpg">
 			<a-mixin id="light"
 						 geometry="primitive: sphere; radius: 1.5"
 						 material="color: #FFF; shader: flat"
@@ -51,32 +55,51 @@
 			<a-mixin id="finger" geometry="primitive: box; height: 0.02; width: 0.02; depth: 0.5"
 									 material="side: double"></a-mixin>
 
-
-			<a-mixin id="color1" class="not-clickable" material="color: #0B88A8"></a-mixin>
-
-			<video id="nuns" autoplay loop="true" src="./assets/vids/Nun_youtube.mp4"></video>
+			<a-mixin id="videoBox" video geometry="height:2;width:1.075"
+                             material="side: double"></a-mixin>
+			<video id="nuns" autoplay loop="false" src="./assets/vids/Nun.mp4"></video>
+			<video id="fireVid" autoplay loop="true" src="./assets/vids/fireVid.mp4"></video>
 		  </a-assets>
 
-		    <a-sky class="not-clickable" radius="5000" color="#000000"></a-sky>
+		
 			
-
-				<a-entity vive-controls="hand: left"></a-entity>
-				<a-entity vive-controls="hand: right"></a-entity>
-				<a-entity daydream-controls></a-entity>
-				<a-entity oculus-touch-controls="hand: left"></a-entity>
-				<a-entity oculus-touch-controls="hand: right"></a-entity>
-				
-				<a-camera id="camera" class="not-clickable" look-controls position="0 0 0" collider-check>
-					<a-entity raycaster="objects:.collidable;showLine:false" position="0.101 0.072 0.584" rotation="0 120 0" line="end:0 0 -1000" ></a-entity>
-					<a-entity raycaster="objects:.collidable;showLine:false" position="0.101 0.072 0.584" rotation="15 180 0" line="end:0 0 -1000" ></a-entity>
-					<a-entity raycaster="objects:.collidable;showLine:false" position="0.101 0.072 0.584" rotation="-15 180 0" line="end:0 0 -1000"></a-entity>		
+			<a-entity tracked-controls="controller: 0; idPrefix: OpenVR">
+			<a-cylinder height="1" radius="0.2" position="0 0 0" rotation="90 0 0" geometry="height:0.37;radius:0.02;shader:flat;src:#woodTexture">
+				<a-cylinder color="crimson" height="1" radius="0.2" rotation="180 0 0" position="0 -0.19 0" material="opacity:0.9;transparent:true;fog:false;side:double;color:#ad8343;shader:flat;src:#fireVid" geometry="height:0.12;segmentsHeight:16;radius:0.04;openEnded:true">
+					<a-animation attribute="geometry.height" dur="2000" from="0.14" to="0.1" direction="alternate-reverse" repeat="indefinite"></a-animation>
+					<a-animation attribute="material.color" dur="2000" from="#ad8343" to="#411a01" direction="alternate-reverse" repeat="indefinite"></a-animation>
 					
+				<a-entity position="0 -0.022264516194091755 0" light="distance:6.999997114206;color:#943903;type:point">
+					<a-animation attribute="light.intensity" dur="2000" from=1" to=" 0.6" direction="alternate-reverse" repeat="indefinite"></a-animation>
+					
+				</a-entity>
+			</a-cylinder>
+			</a-cylinder>
+			</a-entity>
+
+		    <a-sky class="not-clickable" radius="5000" color="#000000"></a-sky>
+					
+				
+				
+				<a-camera id="camera" class="not-clickable" look-controls collider-check>
+
+					
+					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="5.51 180 0" line="end:0 0 -1000"></a-entity>
+					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="15 180 0" line="end:0 0 -1000"></a-entity>
+					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="-15 180 0" line="end:0 0 -1000"></a-entity>
 				</a-camera>
-			<a-entity class="collidable" id="blueTrigger" mixin="picture" position="2.758 2.284 -3.9" rotation="0 -45 0" scale="1 1 1" material ="src: #my-texture; roughness: 0.5; metalness: 0"></a-entity>
-			<a-entity class="collidable" id="orangeTrigger" mixin="picture" visible="false" position="-2.758 2.284 3.9" rotation="0 -45 0" scale="1 1 1" material ="src: #my-texture; roughness: 0.5; metalness: 0"></a-entity>
-			<a-video class="collidable" id="orangeNun" visible="false" src="#nuns" width="9" height="16" position="-2.758 2.284 3.9" rotation="0 -45 0" geometry="height:2;width:1.075" material="color:#943903"></a-video>
-			<a-video class="collidable" id="blueNun" visible="false" src="#nuns" width="9" height="16" position="2.758 2.284 -3.9" rotation="0 -45 0" geometry="height:2;width:1.075" material="color:#016696"></a-video>
-			  <a-entity scale="0.01 0.01 0.01" name="Wall" class="not-clickable" id="environment">
+			<a-entity class="collidable" id="blueTrigger" mixin="picture" position="6.1 5 -7.8" rotation="0 -45 0" scale="2 2 2" material ="src: #my-texture; roughness: 0.5; metalness: 0"></a-entity>
+			<a-entity class="collidable" id="orangeTrigger" mixin="picture" visible="false" position="-6.3 5 7.8" rotation="0 -45 0" scale="2 2 2" material ="src: #my-texture; roughness: 0.5; metalness: 0"></a-entity>
+			<a-video class="collidable" id="orangeNun" visible="false" src="" width="9" height="16" position="-6.3 5 7.8" rotation="0 -45 0" geometry="height:4;width:2.25" material="color:#943903">
+				<a-animation attribute="material.color"
+							dur="1600"
+							from="#943903"
+							to="#271001"
+							direction="alternate-reverse"
+							repeat="indefinite"></a-animation>
+			</a-video>
+			<a-video class="collidable" id="blueNun" visible="false" src="" width="9" height="16" position="6.1 5 -7.8" rotation="0 -45 0" geometry="height:4;width:2.255" material="color:#016696"></a-video>
+			  <a-entity scale="0.02 0.02 0.02" name="Wall" class="not-clickable" id="environment">
 				<a-entity name="polySurface8" class="not-clickable" id="environment" obj-model="obj: #polySurface8-obj; mtl: #polySurface8-mtl"></a-entity>
 				<a-entity name="DoorWay" class="not-clickable" id="environment">
 				  <a-entity name="polySurface5" class="not-clickable" id="environment" obj-model="obj: #polySurface5-obj; mtl: #polySurface5-mtl"></a-entity>
@@ -95,9 +118,24 @@
 				  <a-entity name="pasted__C" class="not-clickable" id="stairs" obj-model="obj: #pasted__C-obj; mtl: #pasted__C-mtl"></a-entity>
 				</a-entity>
 			  </a-entity>
-				<a-entity position="-1.23 1.94 1.8" light="color:#943903;distance:5;type:point;target:null" ></a-entity>
-				<a-entity position="1.23 1.94 -1.8" light="color:#016696;distance:2.36;type:point;target:null"></a-entity>
+				<a-entity position="-2.801 5.185 4.236" light="distance:7;color:#943903;type:point">
+					<a-animation attribute="position"
+						dur="1100"
+						from="-2.801 5.185 4.236"
+						to=" -2.501 6.185 4.236"
+						direction="alternate-reverse"
+						repeat="indefinite"></a-animation>
+					<a-animation attribute="light.distance"
+						dur="1600"
+						from="7"
+						to="5"
+						direction="alternate-reverse"
+						repeat="indefinite"></a-animation>
+				</a-entity>
+				<a-entity position="1.923 4.9 -2.769" light="distance:6.7;color:#016696;type:point"></a-entity>
+				
     </a-scene>
-
   </body>
+
+
 </html>
