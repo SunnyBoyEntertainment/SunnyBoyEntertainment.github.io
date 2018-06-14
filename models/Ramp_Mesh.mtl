@@ -1,0 +1,758 @@
+newmtl House_INT2:chunk008_group000_sub002_MeshPart0:chunk008_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_004.jpg
+Ni 1.00
+newmtl House_INT2:chunk011_group000_sub002_MeshPart0:chunk011_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_007.jpg
+Ni 1.00
+newmtl House_INT2:chunk013_group000_sub002_MeshPart0:chunk013_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_009.jpg
+Ni 1.00
+newmtl House_INT2:chunk022_group000_sub002_MeshPart0:chunk022_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_017.jpg
+Ni 1.00
+newmtl House_INT2:chunk024_group000_sub002_MeshPart0:chunk024_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_019.jpg
+Ni 1.00
+newmtl House_INT2:chunk026_group000_sub002_MeshPart0:chunk026_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_021.jpg
+Ni 1.00
+newmtl House_INT2:chunk027_group000_sub002_filled001_MeshPart0:chunk027_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_021.jpg
+Ni 1.00
+newmtl House_INT2:chunk028_group000_sub002_MeshPart0:chunk028_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_022.jpg
+Ni 1.00
+newmtl House_INT2:chunk029_group000_sub002_MeshPart0:chunk029_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_023.jpg
+Ni 1.00
+newmtl House_INT2:chunk032_group000_sub002_MeshPart0:chunk032_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_025.jpg
+Ni 1.00
+newmtl House_INT2:chunk034_group000_sub002_MeshPart0:chunk034_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_027.jpg
+Ni 1.00
+newmtl House_INT2:chunk035_group000_sub002_MeshPart0:chunk035_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_028.jpg
+Ni 1.00
+newmtl House_INT2:chunk036_group000_sub002_MeshPart0:chunk036_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_029.jpg
+Ni 1.00
+newmtl House_INT2:chunk038_group000_sub002_MeshPart0:chunk038_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_030.jpg
+Ni 1.00
+newmtl House_INT2:chunk039_group000_sub002_MeshPart0:chunk039_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_031.jpg
+Ni 1.00
+newmtl House_INT2:chunk040_group000_sub002_filled001_MeshPart0:chunk040_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_031.jpg
+Ni 1.00
+newmtl House_INT2:chunk042_group000_sub002_MeshPart0:chunk042_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_033.jpg
+Ni 1.00
+newmtl House_INT2:chunk043_group000_sub002_MeshPart0:chunk043_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_034.jpg
+Ni 1.00
+newmtl House_INT2:chunk044_group000_sub002_filled001_MeshPart0:chunk044_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_034.jpg
+Ni 1.00
+newmtl House_INT2:chunk045_group000_sub002_MeshPart0:chunk045_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_035.jpg
+Ni 1.00
+newmtl House_INT2:chunk046_group000_sub002_filled001_MeshPart0:chunk046_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_035.jpg
+Ni 1.00
+newmtl House_INT2:chunk050_group000_sub002_MeshPart0:chunk050_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_037.jpg
+Ni 1.00
+newmtl House_INT2:chunk053_group000_sub002_MeshPart0:chunk053_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_039.jpg
+Ni 1.00
+newmtl House_INT2:chunk055_group000_sub002_MeshPart0:chunk055_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_040.jpg
+Ni 1.00
+newmtl House_INT2:chunk060_group000_sub002_MeshPart0:chunk060_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_043.jpg
+Ni 1.00
+newmtl House_INT2:chunk062_group000_sub002_MeshPart0:chunk062_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_044.jpg
+Ni 1.00
+newmtl House_INT2:chunk063_group000_sub002_MeshPart0:chunk063_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_045.jpg
+Ni 1.00
+newmtl House_INT2:chunk065_group000_sub002_MeshPart0:chunk065_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_046.jpg
+Ni 1.00
+newmtl House_INT2:chunk069_group000_sub002_MeshPart0:chunk069_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_048.jpg
+Ni 1.00
+newmtl House_INT2:chunk070_group000_sub002_filled001_MeshPart0:chunk070_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_048.jpg
+Ni 1.00
+newmtl House_INT2:chunk071_group000_sub002_MeshPart0:chunk071_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_049.jpg
+Ni 1.00
+newmtl House_INT2:chunk073_group001_sub006_MeshPart0:chunk073_group001_sub006_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_050.jpg
+Ni 1.00
+newmtl House_INT2:chunk075_group000_sub002_MeshPart0:chunk075_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_051.jpg
+Ni 1.00
+newmtl House_INT2:chunk076_group000_sub002_filled001_MeshPart0:chunk076_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_051.jpg
+Ni 1.00
+newmtl House_INT2:chunk083_group000_sub002_MeshPart0:chunk083_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_054.jpg
+Ni 1.00
+newmtl House_INT2:chunk084_group000_sub002_filled001_MeshPart0:chunk084_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_054.jpg
+Ni 1.00
+newmtl House_INT2:chunk085_group000_sub002_MeshPart0:chunk085_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_055.jpg
+Ni 1.00
+newmtl House_INT2:chunk091_group000_sub002_MeshPart0:chunk091_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_057.jpg
+Ni 1.00
+newmtl House_INT2:chunk092_group000_sub002_filled001_MeshPart0:chunk092_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_057.jpg
+Ni 1.00
+newmtl House_INT2:chunk093_group000_sub002_MeshPart0:chunk093_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_058.jpg
+Ni 1.00
+newmtl House_INT2:chunk094_group000_sub002_filled001_MeshPart0:chunk094_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_058.jpg
+Ni 1.00
+newmtl House_INT2:chunk095_group000_sub002_MeshPart0:chunk095_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_059.jpg
+Ni 1.00
+newmtl House_INT2:chunk096_group000_sub002_filled001_MeshPart0:chunk096_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_059.jpg
+Ni 1.00
+newmtl House_INT2:chunk100_group000_sub002_MeshPart0:chunk100_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_060.jpg
+Ni 1.00
+newmtl House_INT2:chunk103_group000_sub002_MeshPart0:chunk103_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_061.jpg
+Ni 1.00
+newmtl House_INT2:chunk104_group000_sub002_filled001_MeshPart0:chunk104_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_061.jpg
+Ni 1.00
+newmtl House_INT2:chunk107_group000_sub002_MeshPart0:chunk107_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_062.jpg
+Ni 1.00
+newmtl House_INT2:chunk108_group000_sub002_filled001_MeshPart0:chunk108_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_062.jpg
+Ni 1.00
+newmtl House_INT2:chunk109_group000_sub002_MeshPart0:chunk109_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_063.jpg
+Ni 1.00
+newmtl House_INT2:chunk110_group000_sub002_filled001_MeshPart0:chunk110_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_063.jpg
+Ni 1.00
+newmtl House_INT2:chunk113_group001_sub006_MeshPart0:chunk113_group001_sub006_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_064.jpg
+Ni 1.00
+newmtl House_INT2:chunk123_group000_sub002_MeshPart0:chunk123_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_069.jpg
+Ni 1.00
+newmtl House_INT2:chunk124_group000_sub002_filled001_MeshPart0:chunk124_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_069.jpg
+Ni 1.00
+newmtl House_INT2:chunk129_group000_sub002_MeshPart0:chunk129_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_072.jpg
+Ni 1.00
+newmtl House_INT2:chunk130_group000_sub002_filled001_MeshPart0:chunk130_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_072.jpg
+Ni 1.00
+newmtl House_INT2:chunk136_group000_sub002_MeshPart0:chunk136_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_074.jpg
+Ni 1.00
+newmtl House_INT2:chunk137_group000_sub002_filled001_MeshPart0:chunk137_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_074.jpg
+Ni 1.00
+newmtl House_INT2:chunk143_group000_sub002_MeshPart0:chunk143_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_077.jpg
+Ni 1.00
+newmtl House_INT2:chunk144_group000_sub002_filled001_MeshPart0:chunk144_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_077.jpg
+Ni 1.00
+newmtl House_INT2:chunk145_group000_sub002_MeshPart0:chunk145_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_078.jpg
+Ni 1.00
+newmtl House_INT2:chunk146_group000_sub002_filled001_MeshPart0:chunk146_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_078.jpg
+Ni 1.00
+newmtl House_INT2:chunk149_group000_sub002_MeshPart0:chunk149_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_080.jpg
+Ni 1.00
+newmtl House_INT2:chunk150_group000_sub002_filled001_MeshPart0:chunk150_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_080.jpg
+Ni 1.00
+newmtl House_INT2:chunk152_group000_sub002_MeshPart0:chunk152_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_081.jpg
+Ni 1.00
+newmtl House_INT2:chunk153_group000_sub002_filled001_MeshPart0:chunk153_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_081.jpg
+Ni 1.00
+newmtl House_INT2:chunk156_group000_sub002_MeshPart0:chunk156_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_082.jpg
+Ni 1.00
+newmtl House_INT2:chunk157_group000_sub002_filled001_MeshPart0:chunk157_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_082.jpg
+Ni 1.00
+newmtl House_INT2:chunk160_group000_sub002_MeshPart0:chunk160_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_083.jpg
+Ni 1.00
+newmtl House_INT2:chunk161_group000_sub002_filled001_MeshPart0:chunk161_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_083.jpg
+Ni 1.00
+newmtl House_INT2:chunk163_group000_sub002_MeshPart0:chunk163_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_084.jpg
+Ni 1.00
+newmtl House_INT2:chunk164_group000_sub002_filled001_MeshPart0:chunk164_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_084.jpg
+Ni 1.00
+newmtl House_INT2:chunk166_group000_sub002_MeshPart0:chunk166_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_085.jpg
+Ni 1.00
+newmtl House_INT2:chunk167_group000_sub002_filled001_MeshPart0:chunk167_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_085.jpg
+Ni 1.00
+newmtl House_INT2:chunk170_group000_sub002_MeshPart0:chunk170_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_086.jpg
+Ni 1.00
+newmtl House_INT2:chunk171_group000_sub002_filled001_MeshPart0:chunk171_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_086.jpg
+Ni 1.00
+newmtl House_INT2:chunk173_group000_sub002_MeshPart0:chunk173_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_087.jpg
+Ni 1.00
+newmtl House_INT2:chunk174_group000_sub002_filled001_MeshPart0:chunk174_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_087.jpg
+Ni 1.00
+newmtl House_INT2:chunk176_group000_sub002_MeshPart0:chunk176_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_088.jpg
+Ni 1.00
+newmtl House_INT2:chunk177_group000_sub002_filled001_MeshPart0:chunk177_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_088.jpg
+Ni 1.00
+newmtl House_INT2:chunk181_group000_sub002_MeshPart0:chunk181_group000_sub002_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_090.jpg
+Ni 1.00
+newmtl House_INT2:chunk238_group000_sub002_filled001_MeshPart0:chunk238_group000_sub002_filled001_MeshPart1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_090.jpg
+Ni 1.00
+newmtl VRayMtl1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.60 0.60 0.60
+Tf 1.00 1.00 1.00
+map_Kd e537146612c9439e84fea78f2e21e404_035.jpg
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert22SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert25SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert26SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert27SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert28SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert29SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert30SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert38SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert55SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert56SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert57SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert58SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert60SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert61SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert63SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert63SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl lambert65SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd candle_Texture.jpg
+Ni 1.00
+Ks 0.22 0.22 0.22
+newmtl lambert66SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd BigChair.png
+Ni 1.00
+newmtl pasted__lambert62SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ceiling_LivingRoom.jpg
+Ni 1.00
+newmtl pasted__lambert64SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl pasted__lambert65SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00

@@ -6,35 +6,23 @@
 AFRAME.registerComponent('intersect-color-change', {
   init: function () {
     var el = this.el;
-	var video = document.getElementById("orangeNun");
-	var video2 = document.getElementById("blueNun");
-	var orangeTrigger = document.getElementById("orangeTrigger");
-	var blueTrigger = document.getElementById("blueTrigger");
+	var frameTrigger = document.getElementById("FrameTrigger");
+	var picture = document.getElementById("Frame");
     var material = el.getComputedAttribute('material');
-    var initialColor = material.color;
-    var initialOpacity = material.opacity;
+
 
     // Set color using raycaster parent color.
     el.addEventListener('raycaster-intersected', function (evt) {
 	 switch (evt.target) {
-		case orangeTrigger:
-		video.setAttribute('src', '#nuns');
-		video.play();
-		video.setAttribute('visible', true);
-		orangeTrigger.setAttribute('visible', false);
+		case frameTrigger:
+		picture.setAttribute('material', 'src',  '#photo1');
         break;
 
-		case blueTrigger:
-		video2.setAttribute('src', '#nuns');
-		video2.play();
-		video2.setAttribute('visible', true);
-		blueTrigger.setAttribute('visible', false);
-        break;
 
 	 }
       var raycasterEl = evt.detail.el;
       /*var fingerColor = raycasterEl.parentNode.getComputedAttribute('material').color;*/
-      el.setAttribute('material', 'src',  '#my-texture2');
+     // el.setAttribute('material', 'src',  '#photo2');
 
 	  console.log('Player hit something! ' + el.getAttribute("id"));
 

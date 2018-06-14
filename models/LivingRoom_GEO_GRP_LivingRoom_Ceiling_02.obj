@@ -1,0 +1,20 @@
+mtllib LivingRoom_GEO_GRP_LivingRoom_Ceiling_02.mtl
+usemtl LivingRoom_GEO_GRP_LivingRoom_Ceiling_02
+
+g LivingRoom_GEO_GRP_LivingRoom_Ceiling_02
+v 0.521167 3.413912 -11.32239
+v 0.521167 3.413912 -8.98269
+v 7.024242 3.413912 -8.871682
+v 7.024242 3.413912 -11.21138
+
+vn 0 -1 0
+vn 0 -1 0
+vn 0 -1 0
+vn 0 -1 0
+
+vt 0.764395 0.738715
+vt 0.920357 0.7418
+vt 0.923894 0.189483
+vt 0.772214 0.186398
+f 1/1/1 3/3/3 2/2/2
+f 1/1/1 4/4/4 3/3/3

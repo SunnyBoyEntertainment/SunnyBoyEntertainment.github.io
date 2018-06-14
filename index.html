@@ -1,123 +1,316 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
-	<script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script> 
+    <meta charset="utf-8" />
+    <title>House</title>
+    <meta name="description" content="House" />
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
 	<script src="assets/js/raycaster-helper.js"></script>
     <script src="assets/js/entity-generator.js"></script>
     <script src="assets/js/intersect-color-change.js"></script>  
-	<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
-	<script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
-
   </head>
   <body class="a-body ">
-    <a-scene class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""><canvas class="a-canvas" data-aframe-canvas="true" width="375" height="187"></canvas>
-		  <a-assets>
-			<img id="my-texture" src="images/myTexture.jpg">
-			<img id="my-texture2" src="images/myTexture2.jpg">
-			<img id="fireTexture" src="images/fire.jpg">
-			<img id="woodTexture" src="images/wood.jpg">
-			<a-mixin id="light" geometry="primitive: sphere; radius: 1.5" material="color: #FFF; shader: flat" light="color: #FF0000; distance: 120; intensity: 2; type: point"></a-mixin>
-			<a-mixin id="torusKnot" random-torus-knot="" random-material="" random-position="min: -60 -60 -80; max: 60 60 40"></a-mixin>
-			<a-asset-item id="polySurface8-obj" class="not-clickable" src="./models/polySurface8.obj"></a-asset-item>
-			<a-asset-item id="polySurface8-mtl" class="not-clickable" src="./models/polySurface8.mtl"></a-asset-item>
-			<a-asset-item id="polySurface5-obj" class="not-clickable" src="./models/polySurface5.obj"></a-asset-item>
-			<a-asset-item id="polySurface5-mtl" class="not-clickable" src="./models/polySurface5.mtl"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart0-obj" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart0.obj"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart0-mtl" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart0.mtl"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart1-obj" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart1.obj"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart1-mtl" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart1.mtl"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart2-obj" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart2.obj"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart2-mtl" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart2.mtl"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart3-obj" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart3.obj"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart3-mtl" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart3.mtl"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart4-obj" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart4.obj"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart4-mtl" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart4.mtl"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart5-obj" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart5.obj"></a-asset-item>
-			<a-asset-item id="pasted__Floor_03_locator1_MeshPart5-mtl" class="not-clickable" src="./models/pasted__Floor_03_locator1_MeshPart5.mtl"></a-asset-item>
-			<a-asset-item id="pasted__C-obj" class="not-clickable" src="./models/pasted__C.obj"></a-asset-item>
-			<a-asset-item id="pasted__C-mtl" class="not-clickable" src="./models/pasted__C.mtl"></a-asset-item>
+<a-scene name="House" class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""><canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"></canvas>
+  <a-assets>
+	<img id="photo1" src="./images/Picture.jpg">
+	<img id="photo2" src="./images/Picture_v02.jpg">
+	<img id="tableNormal" src="./images/Ktable_cover_NRM.jpg">
+	<img id="table" src="./images/Ktable_cover.jpg">
+	<a-asset-item id="LivingRoom_Center_Table_LivingRoom_GEO_GRP-obj" src="./models/LivingRoom_Center_Table_LivingRoom_GEO_GRP.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_Center_Table_LivingRoom_GEO_GRP-mtl" src="./models/LivingRoom_Center_Table_LivingRoom_GEO_GRP.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_Celing_Top-obj" src="./models/LivingRoom_GEO_GRP_Celing_Top.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_Celing_Top-mtl" src="./models/LivingRoom_GEO_GRP_Celing_Top.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_01-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_01.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_01-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_01.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_02-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_02.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_02-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_02.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_03-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_03.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_03-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_03.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_04-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_04.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_04-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_04.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_05-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_05.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_05-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_05.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_06-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_06.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Ceiling_06-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Ceiling_06.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Clock_01-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Clock_01.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Clock_01-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Clock_01.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Column_01-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Column_01.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Column_01-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Column_01.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Round_Table-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Round_Table.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Round_Table-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Round_Table.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Sofa_01-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Sofa_01.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Sofa_01-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Sofa_01.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Sofa_02-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Sofa_02.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Sofa_02-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Sofa_02.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Sofa_03-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Sofa_03.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Sofa_03-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Sofa_03.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Squre_Table-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Squre_Table.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Squre_Table-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Squre_Table.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Table_01-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Table_01.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Table_01-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Table_01.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Table_02-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Table_02.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Table_02-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Table_02.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Back-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Back.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Back-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Back.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Floor-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Floor.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Floor-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Floor.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Front-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Front.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Front-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Front.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Left-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Left.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Left-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Left.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Right-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Right.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Right-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Right.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Left-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Left.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Left-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Left.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Piece__01-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Piece__01.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Piece__01-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Piece__01.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Right-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Right.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wall_Right-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wall_Right.mtl"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wood_01-obj" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wood_01.obj"></a-asset-item>
+    <a-asset-item id="LivingRoom_GEO_GRP_LivingRoom_Wood_01-mtl" src="./models/LivingRoom_GEO_GRP_LivingRoom_Wood_01.mtl"></a-asset-item>
+    <a-asset-item id="group9_Ramp_Kitchen_GEO_GRP1_polySurface8-obj" src="./models/group9_Ramp_Kitchen_GEO_GRP1_polySurface8.obj"></a-asset-item>
+    <a-asset-item id="group9_Ramp_Kitchen_GEO_GRP1_polySurface8-mtl" src="./models/group9_Ramp_Kitchen_GEO_GRP1_polySurface8.mtl"></a-asset-item>
+    <a-asset-item id="group9_Ramp_Kitchen_GEO_GRP1_polySurface9-obj" src="./models/group9_Ramp_Kitchen_GEO_GRP1_polySurface9.obj"></a-asset-item>
+    <a-asset-item id="group9_Ramp_Kitchen_GEO_GRP1_polySurface9-mtl" src="./models/group9_Ramp_Kitchen_GEO_GRP1_polySurface9.mtl"></a-asset-item>
+    <a-asset-item id="polySurface7_group9_Ramp_Kitchen_GEO_GRP1-obj" src="./models/polySurface7_group9_Ramp_Kitchen_GEO_GRP1.obj"></a-asset-item>
+    <a-asset-item id="polySurface7_group9_Ramp_Kitchen_GEO_GRP1-mtl" src="./models/polySurface7_group9_Ramp_Kitchen_GEO_GRP1.mtl"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_07-obj" src="./models/Center_Light_GRP_Clight_07.obj"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_07-mtl" src="./models/Center_Light_GRP_Clight_07.mtl"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_09-obj" src="./models/Center_Light_GRP_Clight_09.obj"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_09-mtl" src="./models/Center_Light_GRP_Clight_09.mtl"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_10-obj" src="./models/Center_Light_GRP_Clight_10.obj"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_10-mtl" src="./models/Center_Light_GRP_Clight_10.mtl"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_12-obj" src="./models/Center_Light_GRP_Clight_12.obj"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_12-mtl" src="./models/Center_Light_GRP_Clight_12.mtl"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_13-obj" src="./models/Center_Light_GRP_Clight_13.obj"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_13-mtl" src="./models/Center_Light_GRP_Clight_13.mtl"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_15-obj" src="./models/Center_Light_GRP_Clight_15.obj"></a-asset-item>
+    <a-asset-item id="Center_Light_GRP_Clight_15-mtl" src="./models/Center_Light_GRP_Clight_15.mtl"></a-asset-item>
+    <a-asset-item id="Clight_01_Center_Light_GRP-obj" src="./models/Clight_01_Center_Light_GRP.obj"></a-asset-item>
+    <a-asset-item id="Clight_01_Center_Light_GRP-mtl" src="./models/Clight_01_Center_Light_GRP.mtl"></a-asset-item>
+    <a-asset-item id="Clight_08-obj" src="./models/Clight_08.obj"></a-asset-item>
+    <a-asset-item id="Clight_08-mtl" src="./models/Clight_08.mtl"></a-asset-item>
+    <a-asset-item id="group4_pCube1-obj" src="./models/group4_pCube1.obj"></a-asset-item>
+    <a-asset-item id="group4_pCube1-mtl" src="./models/group4_pCube1.mtl"></a-asset-item>
+    <a-asset-item id="group4_pCube2-obj" src="./models/group4_pCube2.obj"></a-asset-item>
+    <a-asset-item id="group4_pCube2-mtl" src="./models/group4_pCube2.mtl"></a-asset-item>
+    <a-asset-item id="Hallway_01_Kitchen_GEO_GRP1-obj" src="./models/Hallway_01_Kitchen_GEO_GRP1.obj"></a-asset-item>
+    <a-asset-item id="Hallway_01_Kitchen_GEO_GRP1-mtl" src="./models/Hallway_01_Kitchen_GEO_GRP1.mtl"></a-asset-item>
 
-			<a-mixin id="box" class="not-clickable" geometry="primitive: box; depth: 0.1, height: 0.3; width: 0.1" material="color: #DDD; opacity: 0.4; shader: flat" intersect-color-change=""></a-mixin>
-			<a-mixin id="picture" geometry="primitive: box;  height: 3; width: 1; depth: 0.02" material="color: #AAA; opacity: 1; shader: standard" intersect-color-change=""></a-mixin>
-			<a-mixin id="finger" geometry="primitive: box; height: 0.02; width: 0.02; depth: 0.5" material="side: double"></a-mixin>
+	<a-asset-item id="Ramp_Mesh-obj" src="./models/Ramp_Mesh.obj"></a-asset-item>
+    <a-asset-item id="Ramp_Mesh-mtl" src="./models/Ramp_Mesh.mtl"></a-asset-item>
 
-			<a-mixin id="videoBox" video="" geometry="height:2;width:1.075" material="side: double"></a-mixin>
-			<video id="nuns" autoplay="" loop="false" src="./assets/vids/Nun.mp4" playsinline="" webkit-playsinline=""></video>
-			
-		  <img id="nun3" src="images/nun3.gif" crossorigin="anonymous"></a-assets>
-			<a-cylinder color="crimson" height="1" radius="0.2" position="-6.344 5 5.758" material="color:#913802;shader:gif;src:url(https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif)" gif="" geometry="height:0.12;openEnded:true;radius:0.04;segmentsHeight:16" scale="4 4 4" material.color="#913802">
-				<a-animation attribute="material.color" dur="1600" from="#943903" to="#271001" direction="alternate-reverse" repeat="indefinite"></a-animation>
+    <a-asset-item id="Kitchen_GEO_GRP1_Base_Wall-obj" src="./models/Kitchen_GEO_GRP1_Base_Wall.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Base_Wall-mtl" src="./models/Kitchen_GEO_GRP1_Base_Wall.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Ceiling-obj" src="./models/Kitchen_GEO_GRP1_Ceiling.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Ceiling-mtl" src="./models/Kitchen_GEO_GRP1_Ceiling.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Door-obj" src="./models/Kitchen_GEO_GRP1_Door.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Door-mtl" src="./models/Kitchen_GEO_GRP1_Door.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Floor_01-obj" src="./models/Kitchen_GEO_GRP1_Floor_01.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Floor_01-mtl" src="./models/Kitchen_GEO_GRP1_Floor_01.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Floor_02-obj" src="./models/Kitchen_GEO_GRP1_Floor_02.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Floor_02-mtl" src="./models/Kitchen_GEO_GRP1_Floor_02.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Frame_01-obj" src="./models/Kitchen_GEO_GRP1_Frame_01.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Frame_01-mtl" src="./models/Kitchen_GEO_GRP1_Frame_01.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Frame_L-obj" src="./models/Kitchen_GEO_GRP1_Frame_L.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Frame_L-mtl" src="./models/Kitchen_GEO_GRP1_Frame_L.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Frame_R-obj" src="./models/Kitchen_GEO_GRP1_Frame_R.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Frame_R-mtl" src="./models/Kitchen_GEO_GRP1_Frame_R.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Hallway_02-obj" src="./models/Kitchen_GEO_GRP1_Hallway_02.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Hallway_02-mtl" src="./models/Kitchen_GEO_GRP1_Hallway_02.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kichen_Table_Chairs-obj" src="./models/Kitchen_GEO_GRP1_Kichen_Table_Chairs.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kichen_Table_Chairs-mtl" src="./models/Kitchen_GEO_GRP1_Kichen_Table_Chairs.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_56-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_56.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_56-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_56.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_86-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_86.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_86-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_86.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_87-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_87.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_87-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_87.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_88-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_88.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_88-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_88.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_90-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_90.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_90-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_90.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_92-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_92.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_92-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_92.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_93-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_93.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_93-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_93.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_94-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_94.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_94-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_94.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_95-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_95.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_95-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_95.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_115-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_115.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_115-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_115.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_116-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_116.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_116-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_116.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_cover_Kichen_Table1-obj" src="./models/Kitchen_GEO_GRP1_Kitchen_cover_Kichen_Table1.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Kitchen_cover_Kichen_Table1-mtl" src="./models/Kitchen_GEO_GRP1_Kitchen_cover_Kichen_Table1.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_polySurface125_Window_Frame-obj" src="./models/Kitchen_GEO_GRP1_polySurface125_Window_Frame.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_polySurface125_Window_Frame-mtl" src="./models/Kitchen_GEO_GRP1_polySurface125_Window_Frame.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Ramp-obj" src="./models/Ramp_Mesh.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Ramp-mtl" src="./models/Ramp_Mesh.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Shelf_01-obj" src="./models/Kitchen_GEO_GRP1_Shelf_01.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Shelf_01-mtl" src="./models/Kitchen_GEO_GRP1_Shelf_01.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Top-obj" src="./models/Kitchen_GEO_GRP1_Top.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Top-mtl" src="./models/Kitchen_GEO_GRP1_Top.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Top_Wood-obj" src="./models/Kitchen_GEO_GRP1_Top_Wood.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Top_Wood-mtl" src="./models/Kitchen_GEO_GRP1_Top_Wood.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Window_Deco-obj" src="./models/Kitchen_GEO_GRP1_Window_Deco.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Window_Deco-mtl" src="./models/Kitchen_GEO_GRP1_Window_Deco.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Window_Wall-obj" src="./models/Kitchen_GEO_GRP1_Window_Wall.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Window_Wall-mtl" src="./models/Kitchen_GEO_GRP1_Window_Wall.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Wood_Trim_01-obj" src="./models/Kitchen_GEO_GRP1_Wood_Trim_01.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_GEO_GRP1_Wood_Trim_01-mtl" src="./models/Kitchen_GEO_GRP1_Wood_Trim_01.mtl"></a-asset-item>
+    <a-asset-item id="Kitchen_Table-obj" src="./models/Kitchen_Table.obj"></a-asset-item>
+    <a-asset-item id="Kitchen_Table-mtl" src="./models/Kitchen_Table.mtl"></a-asset-item>
+    <a-asset-item id="Light_Cube_08_Light_Cube_GRP-obj" src="./models/Light_Cube_08_Light_Cube_GRP.obj"></a-asset-item>
+    <a-asset-item id="Light_Cube_08_Light_Cube_GRP-mtl" src="./models/Light_Cube_08_Light_Cube_GRP.mtl"></a-asset-item>
+    <a-asset-item id="Light_Cube_GRP_Light_Cube_09-obj" src="./models/Light_Cube_GRP_Light_Cube_09.obj"></a-asset-item>
+    <a-asset-item id="Light_Cube_GRP_Light_Cube_09-mtl" src="./models/Light_Cube_GRP_Light_Cube_09.mtl"></a-asset-item>
+    <a-asset-item id="pCylinder11-obj" src="./models/pCylinder11.obj"></a-asset-item>
+    <a-asset-item id="pCylinder11-mtl" src="./models/pCylinder11.mtl"></a-asset-item>
+    <a-asset-item id="pCylinder12-obj" src="./models/pCylinder12.obj"></a-asset-item>
+    <a-asset-item id="pCylinder12-mtl" src="./models/pCylinder12.mtl"></a-asset-item>
+    <a-asset-item id="pCylinder13-obj" src="./models/pCylinder13.obj"></a-asset-item>
+    <a-asset-item id="pCylinder13-mtl" src="./models/pCylinder13.mtl"></a-asset-item>
+    <a-asset-item id="pCylinder14-obj" src="./models/pCylinder14.obj"></a-asset-item>
+    <a-asset-item id="pCylinder14-mtl" src="./models/pCylinder14.mtl"></a-asset-item>
+    <a-asset-item id="pCylinder15-obj" src="./models/pCylinder15.obj"></a-asset-item>
+    <a-asset-item id="pCylinder15-mtl" src="./models/pCylinder15.mtl"></a-asset-item>
+    <a-asset-item id="pCylinder16-obj" src="./models/pCylinder16.obj"></a-asset-item>
+    <a-asset-item id="pCylinder16-mtl" src="./models/pCylinder16.mtl"></a-asset-item>
 
-			</a-cylinder>
-			<a-cylinder color="crimson" height="1" radius="0.2" position="-3.578 5 7.795" material="color:#913802;shader:gif;src:url(https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif)" gif="" geometry="height:0.12;openEnded:true;radius:0.04;segmentsHeight:16" scale="4 4 4" material.color="#913802">
-				<a-animation attribute="material.color" dur="1600" from="#943903" to="#271001" direction="alternate-reverse" repeat="indefinite"></a-animation>
-			</a-cylinder>
-			
-			<a-entity id="controller">
-				<a-entity oculus-touch-controls="hand:right">
-				</a-entity>
-				<a-entity vive-controls="hand:right;model:false">
-				<a-cylinder height="1" radius="0.2" rotation="90 0 0" geometry="height:0.37;radius:0.02" material="">
-					<a-cylinder color="crimson" height="1" radius="0.2" rotation="180 0 0" position="0 -0.19 0" material="color:#441d03;shader:gif;src:#nun3" gif="" geometry="height:0.10145127784422;radius:0.04;segmentsHeight:16;openEnded:true" material.color="#441d03">
-						<a-animation attribute="geometry.height" dur="2000" from="0.14" to="0.1" direction="alternate-reverse" repeat="indefinite"></a-animation>
-						<a-animation attribute="material.color" dur="2000" from="#ad8343" to="#411a01" direction="alternate-reverse" repeat="indefinite"></a-animation>
-					
-					<a-entity position="0 -0.022264516194091755 0" light="intensity:0.6145127784421999;distance:6.999997114206;color:#943903;type:point">
-						<a-animation attribute="light.intensity" dur="2000" from="1&quot;" to=" 0.6" direction="alternate-reverse" repeat="indefinite"></a-animation>
-					
-					</a-entity>
-				</a-cylinder>
-				</a-cylinder>
-				</a-entity>									
-			</a-entity>
-		    <a-sky class="not-clickable" radius="5000" color="#000000"></a-sky>
-					
-				
-				
-				<a-camera id="camera" class="not-clickable" look-controls="" collider-check="" position="0 1.6 0" rotation="-74.02614713090236 -12.261296815799618 0" camera="" wasd-controls="" data-aframe-inspector-original-camera="">
+			<a-mixin id="box" class="not-clickable" geometry="primitive: box; depth: 0.1, height: 0.3; width: 0.1"
+								  material="color: #DDD; opacity: 0.4; shader: flat"
+								  intersect-color-change></a-mixin>
+			<a-mixin id="picture" geometry="primitive: box;  height: 3; width: 1; depth: 0.02"
+								  material="color: #AAA; opacity: 1; shader: standard"
+								  intersect-color-change></a-mixin>
+			<a-mixin id="finger" geometry="primitive: box; height: 0.02; width: 0.02; depth: 0.5"
+									 material="side: double"></a-mixin>
+  </a-assets>
+  <a-sky radius="5000" color="#000000" material="side:back;color:#763032;wireframe:true"></a-sky>
 
-					
-					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="5.51 180 0" line="end:0 0 -1000"></a-entity>
-					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="15 180 0" line="end:0 0 -1000"></a-entity>
-					<a-entity raycaster="objects:.collidable;showLine:true" position="0.101 0.072 0.584" rotation="-15 180 0" line="end:0 0 -1000"></a-entity>
-				</a-camera>
-			<a-entity class="collidable" id="blueTrigger" mixin="picture" position="6.1 5 -7.8" rotation="0 -45 0" scale="2 2 2" material="src:[object HTMLImageElement]" intersect-color-change=""></a-entity>
-			<a-entity class="collidable" id="orangeTrigger" mixin="picture" visible="false" position="-6.3 5 7.8" rotation="0 -45 0" scale="2 2 2" material="src:[object HTMLImageElement]" intersect-color-change=""></a-entity>
-			<a-box class="collidable" id="orangeNun" visible="true" src="" width="9" height="16" position="-6.3 5 7.8" rotation="0 -45 0" geometry="height:4;width:2.25" material="opacity:0.9;color:#913802;shader:gif;src:#nun3" material.color="#913802">
-				<a-animation attribute="material.color" dur="1600" from="#943903" to="#271001" direction="alternate-reverse" repeat="indefinite"></a-animation>
-			</a-box>
-			<a-video class="collidable" id="blueNun" visible="false" src="" width="9" height="16" position="6.1 5 -7.8" rotation="0 -45 0" geometry="height:4;width:2.255" material="color:#016696"></a-video>
-			  <a-entity scale="0.02 0.02 0.02" name="Wall" class="not-clickable" id="environment">
-				<a-entity name="polySurface8" class="not-clickable" id="environment" obj-model="mtl:./models/polySurface8.mtl;obj:./models/polySurface8.obj"></a-entity>
-				<a-entity name="DoorWay" class="not-clickable" id="environment">
-				  <a-entity name="polySurface5" class="not-clickable" id="environment" obj-model="mtl:./models/polySurface5.mtl;obj:./models/polySurface5.obj"></a-entity>
-				</a-entity>
-				<a-entity name="Floor" class="not-clickable" id="environment">
-				  <a-entity name="pasted__Floor_03_locator1" id="floor" class="not-clickable">
-					<a-entity class="not-clickable" id="floorChild" name="pasted__Floor_03_locator1_MeshPart0" obj-model="mtl:./models/pasted__Floor_03_locator1_MeshPart0.mtl;obj:./models/pasted__Floor_03_locator1_MeshPart0.obj"></a-entity>
-					<a-entity class="not-clickable" id="floorChild" name="pasted__Floor_03_locator1_MeshPart1" obj-model="mtl:./models/pasted__Floor_03_locator1_MeshPart1.mtl;obj:./models/pasted__Floor_03_locator1_MeshPart1.obj"></a-entity>
-					<a-entity class="not-clickable" id="floorChild" name="pasted__Floor_03_locator1_MeshPart2" obj-model="mtl:./models/pasted__Floor_03_locator1_MeshPart2.mtl;obj:./models/pasted__Floor_03_locator1_MeshPart2.obj"></a-entity>
-					<a-entity class="not-clickable" id="floorChild" name="pasted__Floor_03_locator1_MeshPart3" obj-model="mtl:./models/pasted__Floor_03_locator1_MeshPart3.mtl;obj:./models/pasted__Floor_03_locator1_MeshPart3.obj"></a-entity>
-					<a-entity class="not-clickable" id="floorChild" name="pasted__Floor_03_locator1_MeshPart4" obj-model="mtl:./models/pasted__Floor_03_locator1_MeshPart4.mtl;obj:./models/pasted__Floor_03_locator1_MeshPart4.obj"></a-entity>
-					<a-entity class="not-clickable" id="floorChild" name="pasted__Floor_03_locator1_MeshPart5" obj-model="mtl:./models/pasted__Floor_03_locator1_MeshPart5.mtl;obj:./models/pasted__Floor_03_locator1_MeshPart5.obj"></a-entity>
-				  </a-entity>
-				</a-entity>
-				<a-entity name="Stairs" class="not-clickable" id="environment">
-				  <a-entity name="pasted__C" class="not-clickable" id="stairs" obj-model="mtl:./models/pasted__C.mtl;obj:./models/pasted__C.obj"></a-entity>
-				</a-entity>
-			  </a-entity>
-				<a-entity position="-2.5010297650262165 6.184900783245944 4.236" light="distance:6.956264874025672;color:#943903;type:point">
-					<a-animation attribute="position" dur="1100" from="-2.801 5.185 4.236" to=" -2.501 6.185 4.236" direction="alternate-reverse" repeat="indefinite"></a-animation>
-					<a-animation attribute="light.distance" dur="1600" from="7" to="5" direction="alternate-reverse" repeat="indefinite"></a-animation>
-				</a-entity>
-				<a-entity position="1.923 4.9 -2.769" light="color:#016696;distance:6.7;type:point"></a-entity>
-				
-    </a-scene>
-	
-  
+  <a-camera far="1000" position="13.209 0 -3" near="0.3" userHeight="1.6" look-controls-enabled="true" wasd-controls-enabled="true" rotation="0 0 0" collider-check>
+  <a-entity raycaster="objects:.collidable;showLine:true" position="0 0.072 0" rotation="5.51 180 0" line="end:0 0 -1000"></a-entity>
+  </a-camera>
+<a-entity class="collidable" id="FrameTrigger" mixin="picture" position="15.090000000000002 1.71 -8.05" rotation="0 -90 0" scale="8 2 2"  visible="false" intersect-color-change=""></a-entity>
+  <a-entity class="collidable" id="Frame" obj-model="obj:./models/Kitchen_GEO_GRP1_Frame_L.obj" material="color:#ffffff;src:#photo2;" intersect-color-change></a-entity>
+  <a-box scale="100 100 100" material="side:back;color:#000000" geometry=""></a-box>
+  <a-entity position="0 3 0" rotation="-18.55999 -32.3 0.000002251534" name="Directional Light"></a-entity>
+  <a-light position="12.32 2.548 -5.789" name="Point light (1)" type="point" color="#FF9C37" intensity="0" light="distance:2.4;decay:0.85">
+	<a-animation attribute="intensity"
+				   dur="4000"
+				   delay="4500"
+				   fill="forwards"
+				   from="0"
+				   to="2.13"
+				   repeat="0"></a-animation>
 
+  </a-light>
+ 
+     <a-light position="14.01 1.69 -4.02" name="Point light (1)" type="point" color="#FFC684" intensity="0" light="decay:1.285;distance:2.58">
+   		<a-animation attribute="intensity"
+				   dur="4000"
+				   delay="4500"
+				   fill="forwards"
+				   from="0"
+				   to="2.13"
+				   repeat="0"></a-animation>
+   </a-light>
+   <a-light position="14.081 1.75 -7.21" name="Point light (1)" type="point" color="#FFC684" intensity="0" light="decay:1.285;distance:2.58">
+      		<a-animation attribute="intensity"
+				   dur="5000"
+				   delay="5000"
+				   fill="forwards"
+				   from="0"
+				   to="2.13"
+				   repeat="0"></a-animation>
+   </a-light>
+   <a-entity position="-2.79 1.31 0" rotation="45 11.33 0" light="color:#263139;angle:45"></a-entity>
+  <a-entity name="Dinning_v02">
+
+    <a-entity name="Kitchen_GEO_GRP1_Base_Wall" obj-model="mtl:./models/Kitchen_GEO_GRP1_Base_Wall.mtl;obj:./models/Kitchen_GEO_GRP1_Base_Wall.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Ceiling" obj-model="mtl:./models/Kitchen_GEO_GRP1_Ceiling.mtl;obj:./models/Kitchen_GEO_GRP1_Ceiling.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Door" obj-model="mtl:./models/Kitchen_GEO_GRP1_Door.mtl;obj:./models/Kitchen_GEO_GRP1_Door.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Floor_01" obj-model="mtl:./models/Kitchen_GEO_GRP1_Floor_01.mtl;obj:./models/Kitchen_GEO_GRP1_Floor_01.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Floor_02" obj-model="mtl:./models/Kitchen_GEO_GRP1_Floor_02.mtl;obj:./models/Kitchen_GEO_GRP1_Floor_02.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Frame_01" obj-model="mtl:./models/Kitchen_GEO_GRP1_Frame_01.mtl;obj:./models/Kitchen_GEO_GRP1_Frame_01.obj"></a-entity>
+
+    <a-entity name="Kitchen_GEO_GRP1_Frame_R" obj-model="mtl:./models/Kitchen_GEO_GRP1_Frame_R.mtl;obj:./models/Kitchen_GEO_GRP1_Frame_R.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Hallway_02" obj-model="mtl:./models/Kitchen_GEO_GRP1_Hallway_02.mtl;obj:./models/Kitchen_GEO_GRP1_Hallway_02.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kichen_Table_Chairs" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kichen_Table_Chairs.mtl;obj:./models/Kitchen_GEO_GRP1_Kichen_Table_Chairs.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_56" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_56.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_56.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_86" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_86.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_86.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_87" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_87.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_87.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_88" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_88.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_88.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_90" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_90.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_90.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_92" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_92.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_92.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_93" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_93.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_93.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_94" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_94.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_94.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_95" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_95.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_95.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_115" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_115.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_115.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_116" obj-model="mtl:./models/Kitchen_GEO_GRP1_Kitchen_116.mtl;obj:./models/Kitchen_GEO_GRP1_Kitchen_116.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Kitchen_cover_Kichen_Table1" material="src:#table;normalMap:#tableNormal;normalScale:2 2;roughness:0.6" obj-model="obj:./models/Kitchen_GEO_GRP1_Kitchen_cover_Kichen_Table1.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_polySurface125_Window_Frame" obj-model="mtl:./models/Kitchen_GEO_GRP1_polySurface125_Window_Frame.mtl;obj:./models/Kitchen_GEO_GRP1_polySurface125_Window_Frame.obj"></a-entity>
+	<a-entity position="0 0 0.1">
+	<a-entity name="group9_Ramp_Kitchen_GEO_GRP1_polySurface8" obj-model="obj: #group9_Ramp_Kitchen_GEO_GRP1_polySurface8-obj; mtl: #group9_Ramp_Kitchen_GEO_GRP1_polySurface8-mtl"></a-entity>
+    <a-entity name="group9_Ramp_Kitchen_GEO_GRP1_polySurface9" obj-model="obj: #group9_Ramp_Kitchen_GEO_GRP1_polySurface9-obj; mtl: #group9_Ramp_Kitchen_GEO_GRP1_polySurface9-mtl"></a-entity>
+    <a-entity name="polySurface7_group9_Ramp_Kitchen_GEO_GRP1" obj-model="obj: #polySurface7_group9_Ramp_Kitchen_GEO_GRP1-obj; mtl: #polySurface7_group9_Ramp_Kitchen_GEO_GRP1-mtl"></a-entity>
+	</a-entity>
+	<a-entity position="0.2 0 3.2">
+	<a-entity name="group9_Ramp_Kitchen_GEO_GRP1_polySurface8" obj-model="obj: #group9_Ramp_Kitchen_GEO_GRP1_polySurface8-obj; mtl: #group9_Ramp_Kitchen_GEO_GRP1_polySurface8-mtl"></a-entity>
+    <a-entity name="group9_Ramp_Kitchen_GEO_GRP1_polySurface9" obj-model="obj: #group9_Ramp_Kitchen_GEO_GRP1_polySurface9-obj; mtl: #group9_Ramp_Kitchen_GEO_GRP1_polySurface9-mtl"></a-entity>
+    <a-entity name="polySurface7_group9_Ramp_Kitchen_GEO_GRP1" obj-model="obj: #polySurface7_group9_Ramp_Kitchen_GEO_GRP1-obj; mtl: #polySurface7_group9_Ramp_Kitchen_GEO_GRP1-mtl"></a-entity>
+	</a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Shelf_01" obj-model="mtl:./models/Kitchen_GEO_GRP1_Shelf_01.mtl;obj:./models/Kitchen_GEO_GRP1_Shelf_01.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Top" obj-model="mtl:./models/Kitchen_GEO_GRP1_Top.mtl;obj:./models/Kitchen_GEO_GRP1_Top.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Top_Wood" obj-model="mtl:./models/Kitchen_GEO_GRP1_Top_Wood.mtl;obj:./models/Kitchen_GEO_GRP1_Top_Wood.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Window_Deco" obj-model="mtl:./models/Kitchen_GEO_GRP1_Window_Deco.mtl;obj:./models/Kitchen_GEO_GRP1_Window_Deco.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Window_Wall" obj-model="mtl:./models/Kitchen_GEO_GRP1_Window_Wall.mtl;obj:./models/Kitchen_GEO_GRP1_Window_Wall.obj"></a-entity>
+    <a-entity name="Kitchen_GEO_GRP1_Wood_Trim_01" obj-model="mtl:./models/Kitchen_GEO_GRP1_Wood_Trim_01.mtl;obj:./models/Kitchen_GEO_GRP1_Wood_Trim_01.obj"></a-entity>
+    <a-entity name="Kitchen_Table" obj-model="mtl:./models/Kitchen_Table.mtl;obj:./models/Kitchen_Table.obj"></a-entity>
+	<a-light position="0.78 1.4 -6.17" color="#FFC684" distance="2.75" decay="1.26" intensity="0" type="point">
+	<a-animation attribute="intensity"
+				   dur="5000"
+				   delay="9000"
+				   fill="forwards"
+				   from="0"
+				   to="2.13"
+				   repeat="0"></a-animation>
+	</a-light>
+  </a-entity>
+<a-entity position="8.09 0 0.88" scale="1 5.95 1" geometry="" material="color:#000000"></a-entity>  
+<a-entity light="color:#031321;type:ambient"></a-entity>
+  <a-entity name="Livingroom">
+    <a-entity name="LivingRoom_Center_Table_LivingRoom_GEO_GRP" obj-model="obj: #LivingRoom_Center_Table_LivingRoom_GEO_GRP-obj; mtl: #LivingRoom_Center_Table_LivingRoom_GEO_GRP-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_Celing_Top" obj-model="obj: #LivingRoom_GEO_GRP_Celing_Top-obj; mtl: #LivingRoom_GEO_GRP_Celing_Top-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Ceiling_01" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_01-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_01-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Ceiling_02" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_02-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_02-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Ceiling_03" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_03-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_03-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Ceiling_04" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_04-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_04-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Ceiling_05" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_05-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_05-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Ceiling_06" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_06-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Ceiling_06-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Clock_01" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Clock_01-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Clock_01-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Column_01" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Column_01-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Column_01-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Round_Table" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Round_Table-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Round_Table-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Sofa_01" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Sofa_01-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Sofa_01-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Sofa_02" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Sofa_02-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Sofa_02-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Sofa_03" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Sofa_03-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Sofa_03-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Squre_Table" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Squre_Table-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Squre_Table-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Table_01" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Table_01-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Table_01-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Table_02" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Table_02-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Table_02-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_Back" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_Back-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_Back-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_Floor" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_Floor-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_Floor-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_Front" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_Front-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_Front-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Left" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Left-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Left-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Right" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Right-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_InnerWall_Right-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_Left" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_Left-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_Left-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_Piece__01" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_Piece__01-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_Piece__01-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wall_Right" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wall_Right-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wall_Right-mtl"></a-entity>
+    <a-entity name="LivingRoom_GEO_GRP_LivingRoom_Wood_01" obj-model="obj: #LivingRoom_GEO_GRP_LivingRoom_Wood_01-obj; mtl: #LivingRoom_GEO_GRP_LivingRoom_Wood_01-mtl"></a-entity>
+  </a-entity>
+
+
+
+</a-scene>
 
 
 </body></html>
